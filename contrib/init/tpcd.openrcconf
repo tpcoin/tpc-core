@@ -1,0 +1,26 @@
+# /etc/conf.d/tpcd: config file for /etc/init.d/tpcd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/tpc/tpc.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/tpcd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/tpcd.pid"
+
+# Where to write tpcd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/tpcd"
+
+# User and group to own tpcd process
+#BITCOIND_USER="tpc"
+#BITCOIND_GROUP="tpc"
+
+# Path to tpcd executable
+#BITCOIND_BIN="/usr/bin/tpcd"
+
+# Nice value to run tpcd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

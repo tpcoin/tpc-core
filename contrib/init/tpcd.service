@@ -1,0 +1,26 @@
+[Unit]
+Description=TPC's distributed currency daemon
+After=network.target
+
+[Service]
+User=tpc
+Group=tpc
+
+Type=forking
+PIDFile=/var/lib/tpcd/tpcd.pid
+
+ExecStart=/usr/bin/tpcd -daemon -pid=/var/lib/tpcd/tpcd.pid \
+          -conf=/etc/tpc/tpc.conf -datadir=/var/lib/tpcd
+
+ExecStop=-/usr/bin/tpc-cli -conf=/etc/tpc/tpc.conf \
+         -datadir=/var/lib/tpcd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

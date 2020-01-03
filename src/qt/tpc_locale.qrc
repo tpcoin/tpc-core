@@ -1,0 +1,30 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/tpc_bg.qm</file>
+        <file alias="ca">locale/tpc_ca.qm</file>
+        <file alias="cs">locale/tpc_cs.qm</file>
+        <file alias="da">locale/tpc_da.qm</file>
+        <file alias="de">locale/tpc_de.qm</file>
+        <file alias="en">locale/tpc_en.qm</file>
+        <file alias="en_US">locale/tpc_en_US.qm</file>
+        <file alias="es">locale/tpc_es.qm</file>
+        <file alias="fi">locale/tpc_fi.qm</file>
+        <file alias="fr_FR">locale/tpc_fr_FR.qm</file>
+        <file alias="hr">locale/tpc_hr.qm</file>
+        <file alias="it">locale/tpc_it.qm</file>
+        <file alias="ja">locale/tpc_ja.qm</file>
+        <file alias="ko_KR">locale/tpc_ko_KR.qm</file>
+        <file alias="nl">locale/tpc_nl.qm</file>
+        <file alias="pl">locale/tpc_pl.qm</file>
+        <file alias="pt">locale/tpc_pt.qm</file>
+        <file alias="pt_BR">locale/tpc_pt_BR.qm</file>
+        <file alias="ro_RO">locale/tpc_ro_RO.qm</file>
+        <file alias="ru">locale/tpc_ru.qm</file>
+        <file alias="sk">locale/tpc_sk.qm</file>
+        <file alias="sv">locale/tpc_sv.qm</file>
+        <file alias="tr">locale/tpc_tr.qm</file>
+        <file alias="uk">locale/tpc_uk.qm</file>
+        <file alias="zh_CN">locale/tpc_zh_CN.qm</file>
+        <file alias="zh_TW">locale/tpc_zh_TW.qm</file>
+    </qresource>
+</RCC>
