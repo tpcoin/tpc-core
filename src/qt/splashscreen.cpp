@@ -46,7 +46,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
     pixmap = networkStyle->getSplashImage();
 
     QPainter pixPaint(&pixmap);
-    pixPaint.setPen(QColor(232, 232, 232));
+    pixPaint.setPen(QColor(62, 62, 62));
 
     // check font size and drawing with
     pixPaint.setFont(QFont(font, 18 * fontFactor));

@@ -83,7 +83,21 @@ public:
     QLabel *labelWatchTotal;
     QSpacerItem *horizontalSpacer_9;
     QSpacerItem *verticalSpacer_3;
+    QFrame *frame_ZerocoinBalances;
     QVBoxLayout *verticalLayout_7;
+    QHBoxLayout *horizontalLayout_8;
+    QLabel *label_5z_3;
+    QSpacerItem *horizontalSpacer_11;
+    QFrame *line_ZerocoinBalance;
+    QGridLayout *gridLayout_5;
+    QLabel *labelzBalanceMatureText;
+    QLabel *labelzBalanceMature;
+    QLabel *labelzBalanceUnconfirmedText;
+    QLabel *labelzBalanceUnconfirmed;
+    QLabel *labelzBalanceImmatureText;
+    QLabel *labelzBalanceImmature;
+    QLabel *labelzBalanceText;
+    QLabel *labelzBalance;
     QSpacerItem *horizontalSpacer_4;
     QSpacerItem *verticalSpacer_4;
     QVBoxLayout *verticalLayout_right;
@@ -436,6 +450,125 @@ public:
         labelWatchTotal->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         gridLayout->addWidget(labelWatchTotal, 5, 2, 1, 1);
+
+        horizontalSpacer_9 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_9, 5, 3, 1, 1);
+
+
+        verticalLayout_4->addLayout(gridLayout);
+
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_4->addItem(verticalSpacer_3);
+
+
+        verticalLayout->addWidget(frame_Balances);
+
+        frame_ZerocoinBalances = new QFrame(frameObfuscation);
+        frame_ZerocoinBalances->setObjectName(QStringLiteral("frame_ZerocoinBalances"));
+        frame_ZerocoinBalances->setFrameShape(QFrame::StyledPanel);
+        frame_ZerocoinBalances->setFrameShadow(QFrame::Raised);
+        verticalLayout_7 = new QVBoxLayout(frame_ZerocoinBalances);
+        verticalLayout_7->setObjectName(QStringLiteral("verticalLayout_7"));
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
+        label_5z_3 = new QLabel(frame_ZerocoinBalances);
+        label_5z_3->setObjectName(QStringLiteral("label_5z_3"));
+        label_5z_3->setMinimumSize(QSize(0, 20));
+        label_5z_3->setFont(font2);
+
+        horizontalLayout_8->addWidget(label_5z_3);
+
+        horizontalSpacer_11 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_8->addItem(horizontalSpacer_11);
+
+
+        verticalLayout_7->addLayout(horizontalLayout_8);
+
+        line_ZerocoinBalance = new QFrame(frame_ZerocoinBalances);
+        line_ZerocoinBalance->setObjectName(QStringLiteral("line_ZerocoinBalance"));
+        line_ZerocoinBalance->setMinimumSize(QSize(0, 1));
+        line_ZerocoinBalance->setMaximumSize(QSize(16777215, 1));
+        line_ZerocoinBalance->setFrameShape(QFrame::HLine);
+        line_ZerocoinBalance->setFrameShadow(QFrame::Sunken);
+
+        verticalLayout_7->addWidget(line_ZerocoinBalance);
+
+        gridLayout_5 = new QGridLayout();
+        gridLayout_5->setSpacing(12);
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+        labelzBalanceMatureText = new QLabel(frame_ZerocoinBalances);
+        labelzBalanceMatureText->setObjectName(QStringLiteral("labelzBalanceMatureText"));
+
+        gridLayout_5->addWidget(labelzBalanceMatureText, 1, 0, 1, 1);
+
+        labelzBalanceMature = new QLabel(frame_ZerocoinBalances);
+        labelzBalanceMature->setObjectName(QStringLiteral("labelzBalanceMature"));
+        labelzBalanceMature->setFont(font3);
+        labelzBalanceMature->setText(QString::fromUtf8("0.000\342\200\211000\342\200\21100 TPC"));
+        labelzBalanceMature->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_5->addWidget(labelzBalanceMature, 1, 1, 1, 1);
+
+        labelzBalanceUnconfirmedText = new QLabel(frame_ZerocoinBalances);
+        labelzBalanceUnconfirmedText->setObjectName(QStringLiteral("labelzBalanceUnconfirmedText"));
+
+        gridLayout_5->addWidget(labelzBalanceUnconfirmedText, 2, 0, 1, 1);
+
+        labelzBalanceUnconfirmed = new QLabel(frame_ZerocoinBalances);
+        labelzBalanceUnconfirmed->setObjectName(QStringLiteral("labelzBalanceUnconfirmed"));
+        labelzBalanceUnconfirmed->setFont(font3);
+        labelzBalanceUnconfirmed->setText(QString::fromUtf8("0.000\342\200\211000\342\200\21100 TPC"));
+        labelzBalanceUnconfirmed->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_5->addWidget(labelzBalanceUnconfirmed, 2, 1, 1, 1);
+
+        labelzBalanceImmatureText = new QLabel(frame_ZerocoinBalances);
+        labelzBalanceImmatureText->setObjectName(QStringLiteral("labelzBalanceImmatureText"));
+
+        gridLayout_5->addWidget(labelzBalanceImmatureText, 3, 0, 1, 1);
+
+        labelzBalanceImmature = new QLabel(frame_ZerocoinBalances);
+        labelzBalanceImmature->setObjectName(QStringLiteral("labelzBalanceImmature"));
+        labelzBalanceImmature->setFont(font3);
+        labelzBalanceImmature->setText(QString::fromUtf8("0.000\342\200\211000\342\200\21100 TPC"));
+        labelzBalanceImmature->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_5->addWidget(labelzBalanceImmature, 3, 1, 1, 1);
+
+        labelzBalanceText = new QLabel(frame_ZerocoinBalances);
+        labelzBalanceText->setObjectName(QStringLiteral("labelzBalanceText"));
+
+        gridLayout_5->addWidget(labelzBalanceText, 4, 0, 1, 1);
+
+        labelzBalance = new QLabel(frame_ZerocoinBalances);
+        labelzBalance->setObjectName(QStringLiteral("labelzBalance"));
+        labelzBalance->setFont(font3);
+        labelzBalance->setCursor(QCursor(Qt::IBeamCursor));
+        labelzBalance->setText(QString::fromUtf8("0.000\342\200\211000\342\200\21100 TPC"));
+        labelzBalance->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        labelzBalance->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
+
+        gridLayout_5->addWidget(labelzBalance, 4, 1, 1, 1);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_5->addItem(horizontalSpacer_4, 4, 2, 1, 1);
+
+
+        verticalLayout_7->addLayout(gridLayout_5);
+
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_7->addItem(verticalSpacer_4);
+
+
+        verticalLayout->addWidget(frame_ZerocoinBalances);
+
+
+        verticalLayout_left->addWidget(frameObfuscation);
 
         verticalLayout_left->setStretch(0, 1);
 
